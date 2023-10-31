@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+    <div class="container">
+        <div class="menu">
+            <h3>JIET</h1>
+                <div class="menu_list">
+                    <ul>
+                        <li onclick="show(0)" class="key"><span class="material-symbols-outlined icon">
+                                home
+                            </span><span>Home</span></li>
+                        <li onclick="show(1)" class="key"> <span class="material-symbols-outlined icon">
+                                badge
+                            </span><span>Employees</span></li>
+                        <li onclick="show(2)" class="key"><span class="material-symbols-outlined icon">
+                                person_alert
+                            </span><span> Request</span></li>
+                        <li onclick="show(3)" class="key"><span class="material-symbols-outlined icon">
+                                group
+                            </span><span>Students</span></li>
+                        <li onclick="show(4)" class="key"><span class="material-symbols-outlined icon">
+                                person_add
+                            </span><span>Add Std</span></li>
+                        <li onclick="show(5)" class="key"><span class="material-symbols-outlined icon">
+                                breaking_news_alt_1
+                            </span><span>Result</span></li>
+                    </ul>
+                </div>
+        </div>
+        <div class="containt home">
+            <h2>JIND INSTITUTE OF ENGINEERING AND TECHNOLOGY Home</h2>
+        </div>
+        <div class="containt ">
+            <h2>JIND INSTITUTE OF ENGINEERING AND TECHNOLOGY Employees</h2>
+        </div>
+        <div class="containt ">
+            <h2>JIND INSTITUTE OF ENGINEERING AND TECHNOLOGY Request</h2>
+        </div>
+        <div class="containt ">
+            <h2>JIND INSTITUTE OF ENGINEERING AND TECHNOLOGY Students</h2>
+        </div>
+        <div class="containt ">
+            <h2>JIND INSTITUTE OF ENGINEERING AND TECHNOLOGY Add std</h2>
+        </div>
+        <div class="containt ">
+            <h2>JIND INSTITUTE OF ENGINEERING AND TECHNOLOGY Result</h2>
+        </div>
+
+    </div>
+    <div class="profile_menu_div">
+        <div class="log">
+            <div class="profile" id="profile">
+                <div class="menu_bar " id="menu_btn" onclick="toggle_menu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="user_div">
+                    <div class="user_data " id="user_data">
+                        <div class="details">
+                        </div>
+                    </div>
+                    <div class="username user" id="username">
+                        <h1>udit</h1>
+                        <button class="Logout_btn">Log Out</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="scripts">
+        <script src="dash.js"></script>
+    </div>
+</body>
+
+</html>

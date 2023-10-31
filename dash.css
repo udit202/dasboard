@@ -1,0 +1,175 @@
+.container{
+    width: 100%;
+    height: 600px;
+    background-color: white;
+}
+.menu{
+    display: inline-block;
+    width: 55px;
+    height:100%;
+    border: 1px solid white;
+    background-color: navy;
+    transition: width 1s;
+    text-align: center;
+    overflow-x: hidden;
+    color: white;
+}
+.menu:hover{
+    width: 180px;    
+}
+.containt{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    display: inline-block;
+    width: 94.5%;
+    height: 600px;
+    background-color: white;
+    border: 2px solid navy;
+    transition: width 1s;
+    border-left: hidden;
+    display: none;
+}
+.containt>h2{
+    background-color: navy;
+    color: white;
+    margin-top: 0px;
+    padding: 5px 10px;
+}
+.menu_list>ul{
+    list-style: none;
+    font-size: 25px;  
+    margin-left: 0px;
+    padding-left:5px;
+    text-align: left;
+}
+.menu_list>ul>li{
+    margin: 30px 10px;
+    transition: background-color 1s;
+    overflow-x: hidden;
+    width: 180px;
+    color: white;
+    border-radius: 5px;
+}
+.menu_list>ul>li:hover{
+    background-color: white;
+    color: navy;
+    border: 2px solid white;
+
+}
+.icon{
+    margin-top: 3px;
+    margin-right: 20px;
+}
+.menu:hover ~ .containt{
+    width: 85%;
+}
+.home{
+    display: inline-block;
+}
+.profile_menu_div{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+
+
+}
+.log{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    /* border: 1px solid rgb(198, 30, 11); */
+    z-index: 3;
+    border-radius: 10px;
+    
+}
+.profile{
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    width: 50px;
+    height: 30px;
+    border: 1px solid navy;
+    /* transition: width 1s, height 1s; */
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+.profile_div{
+    position: relative;
+    width: 300px;
+    height: 250px;
+    transition: width 1s, height 1s;
+}
+
+.menu_bar{
+    position: absolute;
+    top: 0 ;
+    right: 5px;
+
+}
+.menu_bar>div{
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin-top: 8px;
+}
+.cross{
+    padding: 12px 15px;
+}
+.cross>:nth-child(1){
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    rotate: 45deg;
+    
+}
+.cross>:nth-child(2){
+   visibility: hidden;
+}
+.cross>:nth-child(3){
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    rotate: -45deg;
+}
+.profile_div>.user_div{
+    position: absolute;
+    top: 38px;
+    width: 100%;
+}
+.profile_div>.user_div>div{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+.profile_div>.user_div>.user_data>.details{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: red;
+}
+.user{
+    display: none;
+}
+.profile_div>.user_div>.username{ 
+    display: block;
+    width: 100%;
+    margin-top: -20px;
+    padding-top: 0px;
+}
+.Logout_btn{
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid navy;
+    font-size: 15px;
+    font-weight: bold;
+}
+.Logout_btn:hover{
+    background-color: navy;
+    color: white;
+}
