@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="menu">
+            <h3>
+                GANTAVYA
+            </h3>
+            <h4 style="color: white;">
+                Admin
+            </h4>
+            <ul>
+                <li class="menu_btn" onclick="container_switcher(0)">Home</li>
+                <li  class="menu_btn" onclick="container_switcher(1)">Vendors</li>
+                <li  class="menu_btn" onclick="container_switcher(2)">Add</li>
+                <li  class="menu_btn" onclick="container_switcher(3)">Blocked</li>
+                <li  class="menu_btn" onclick="container_switcher(4)">Vechles</li>
+                <li  class="menu_btn" >Log-Out</li>
+            </ul>
+        </div>
+        <div class="logo">
+            <h1>Dashboard</h1>
+        </div>
+        <div class="content">
+            <div class="data">
+                <div class="overview">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="chart">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="data">
+                <h1>Vendors</h1>
+            </div>
+            <div class="data">
+                <h1>Add</h1>
+            </div>
+            <div class="data">
+                <h1>
+                    Blocked
+                </h>
+            </div>
+            <div class="data">
+                <h1>
+                    Vechles
+                </h1>
+            </div>
+        </div>
+    </div>
+    <script src="dash.js"></script>
+</body>
+
+</html>
